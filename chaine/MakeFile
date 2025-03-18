@@ -1,0 +1,2 @@
+chaine: chaine.c
+	gcc -o chaine chaine.c
