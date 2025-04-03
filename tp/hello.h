@@ -1,0 +1,1 @@
+#define TEXTE "Hello world"

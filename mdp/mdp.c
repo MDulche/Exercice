@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-#define LONGUEUR_MINUSCULE 26
-#define LONGUEUR_MAJUSCULE 26
+#define LONGUEUR_ALPHABET 26
 #define LONGUEUR_SPECIAL 4
 #define LONGUEUR_CHIFFRE 10
 #define LONGUEUR_MDP 50
@@ -63,13 +62,13 @@ int symbole_special(char *chaine)
 
 int comptage_maj(char *chaine)
 {
-    char caracteremaj[LONGUEUR_MAJUSCULE] = {'A','B','C','D','E','F','G','H','I','J','K','L','M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Z'};
+    char caracteremaj[LONGUEUR_ALPHABET] = {'A','B','C','D','E','F','G','H','I','J','K','L','M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Z'};
     int i=0;
     int count=0;
 
     while(chaine[i] != '\0')
     {
-        for(int j=0; j<LONGUEUR_MINUSCULE; j++)
+        for(int j=0; j<LONGUEUR_ALPHABET; j++)
         {
             if(chaine[i] == caracteremaj[j])
             {
@@ -83,14 +82,14 @@ int comptage_maj(char *chaine)
 
 int comptage_min(char *chaine)
 {
-    char caracteremin[LONGUEUR_MINUSCULE] = {'a','b','c','d','e','f','g','h','i','j','k','l','m', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'z'};
+    char caracteremin[LONGUEUR_ALPHABET] = {'a','b','c','d','e','f','g','h','i','j','k','l','m', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'z'};
     
     int i=0;
     int count=0;
 
     while(chaine[i] != '\0')
     {
-        for(int j=0; j<LONGUEUR_MINUSCULE; j++)
+        for(int j=0; j<LONGUEUR_ALPHABET; j++)
         {
             if(chaine[i] == caracteremin[j])
             {
